@@ -4,7 +4,9 @@ import { generateId } from "../additional/api";
 
 const getCurrentTodos = () => {
   try {
-    return JSON.parse(window.localStorage.getItem("todos") || "[]");
+    const initial = JSON.stringify([{"id":"0ac895f128481lmjcwh66","title":"One more task","completed":false},{"id":"8e13bdc1640f7lmjcvtyd","title":"My other task","completed":false},{"id":"7c4f7530d2d62lmjcvoux","title":"My first task","completed":true}]);
+
+    return JSON.parse(window.localStorage.getItem("todos") || initial);
   } catch (err) {
     window.localStorage.setItem("todos", "[]");
   }
