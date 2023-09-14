@@ -1,5 +1,5 @@
 <h1> Приложение "Список задач" ("Todo List")</h1>
-<p>Ссылка на github pages: <a target="_blank">https://irinaugrak.github.io/todo-mobx/</a></p>
+<p>Ссылка на github pages: https://irinaugrak.github.io/todo-mobx/</p>
 <p>Для запуска приложения на локальном компьютере необходимо выполнить команды:</p>
 <p><strong>npm install</strong></p>
 <p><strong>npm run dev</strong></p>
