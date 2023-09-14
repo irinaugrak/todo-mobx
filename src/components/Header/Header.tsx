@@ -1,5 +1,6 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
+import { useTranslation } from 'react-i18next';
 import TodoInput from "../TodoInput/TodoInput";
 import Menu from "../Menu/Menu";
 import { ILang } from "../../additional/types";
@@ -20,6 +21,9 @@ const Header: React.FC<Props> = observer(({
   createTodo,
   changeLanguage,
 }) => {
+
+  const { t } = useTranslation();
+
   return (
     <header className={styles.header}>
       <Menu
@@ -30,7 +34,7 @@ const Header: React.FC<Props> = observer(({
         changeLanguage={changeLanguage}
       />
       <section className={styles.headerBottom}>
-        <h1 className={styles.headerTitle}>Todo</h1>
+        <h1 className={styles.headerTitle}>{t("todoList")}</h1>
         <TodoInput createTodo={createTodo} />
       </section>
     </header>
