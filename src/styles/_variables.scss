@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 $grey: #F5F2F1;
 $medium-grey: #CCCCCC;
 $dark-grey: #787878;
@@ -6,3 +8,6 @@ $blue: #ACBED7;
 $white: #FFF;
 $beige: #B1ACA2;
 $pink: #F0DFD2;
+
+$coeff-768-w: math.div(100vw, 768);
+$coeff-420-w: math.div(100vw, 420);
