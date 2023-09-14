@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./bar.module.scss";
-import { IShow } from "../../additional/types";
 import { observer } from "mobx-react-lite";
 import Select  from "../Select/Select";
+import { IShow } from "../../additional/types";
+import styles from "./bar.module.scss";
 
 interface Props {
   show: string;

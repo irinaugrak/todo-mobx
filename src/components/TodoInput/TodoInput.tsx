@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from "react";
+import { observer } from "mobx-react-lite";
 import { useTranslation } from 'react-i18next';
 import styles from "./todoInput.module.scss";
 
@@ -6,7 +7,7 @@ interface Props {
   createTodo: (title: string) => void;
 }
 
-const TodoInput: React.FC<Props> = ({ createTodo }) => {
+const TodoInput: React.FC<Props> = observer(({ createTodo }) => {
   const [inputValue, setInputValue] = useState("");
   const { t } = useTranslation();
 
@@ -34,6 +35,6 @@ const TodoInput: React.FC<Props> = ({ createTodo }) => {
       </button>
     </div>
   );
-};
+});
 
 export default TodoInput;

@@ -1,12 +1,12 @@
-import "../i18n/config";
-import { useTranslation } from "react-i18next";
 import React from "react";
 import { observer } from "mobx-react-lite";
+import "../i18n/config";
+import { useTranslation } from "react-i18next";
 import todoStore from "../store/todoStore";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
-import styles from "./app.module.scss";
 import { Langs as langs, Shows as shows } from "../additional/enums";
+import styles from "./app.module.scss";
 
 export const App: React.FC = observer(() => {
   const { i18n } = useTranslation();

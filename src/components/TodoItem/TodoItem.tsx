@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { observer } from "mobx-react-lite";
 import styles from "./todoItem.module.scss";
 
 interface Props {
@@ -10,7 +11,7 @@ interface Props {
   removeTodo: (id: string) => void;
 }
 
-const TodoItem: React.FC<Props> = ({
+const TodoItem: React.FC<Props> = observer(({
   id,
   title,
   completed,
@@ -96,6 +97,6 @@ const TodoItem: React.FC<Props> = ({
       </div>
     </li>
   );
-};
+});
 
 export default TodoItem;

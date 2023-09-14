@@ -2,9 +2,9 @@
 
 .select {
   display: flex;
-  align-items: center;
   position: relative;
-  padding: 15px;
+  align-items: center;
+  padding: 15px 10px 5px;
 
   &Open {
     position: relative;
@@ -12,13 +12,13 @@
     &::after {
       position: absolute;
       content: "";
-      background: no-repeat center center /80% url("../../assets/images/down.svg");
       width: 16px;
       height: 16px;
       top: 0;
       left: 0;
       transform: translate(-50%, -50%);
       margin-left: 10px;
+      background: no-repeat center center /80% url("../../assets/images/down.svg");
     }
   }
 
@@ -29,15 +29,15 @@
   }
 
   &List {
+    display: none;
     position: absolute;
     z-index: 1;
-    background-color: $white;
-    border: 1px solid $medium-grey;
     top: 35px;
     left: 25px;
     padding: 5px 0;
-    display: none;
+    border: 1px solid $medium-grey;
     border-radius: 5px;
+    background-color: $white;
 
     &.Active {
       display: block;

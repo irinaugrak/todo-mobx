@@ -1,7 +1,7 @@
 import React from "react";
+import { observer } from "mobx-react-lite";
 import TodoItem from "../TodoItem/TodoItem";
 import { ITodo } from "../../additional/types";
-import { observer } from "mobx-react-lite";
 import styles from "./todoList.module.scss";
 
 interface Props {

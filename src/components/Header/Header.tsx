@@ -1,8 +1,9 @@
 import React from "react";
-import styles from "./header.module.scss";
+import { observer } from "mobx-react-lite";
 import TodoInput from "../TodoInput/TodoInput";
 import Menu from "../Menu/Menu";
 import { ILang } from "../../additional/types";
+import styles from "./header.module.scss";
 
 interface Props {
   lang: string;
@@ -12,7 +13,7 @@ interface Props {
   changeLanguage: (lang: string) => void;
 }
 
-const Header: React.FC<Props> = ({
+const Header: React.FC<Props> = observer(({
   lang,
   langs,
   saveLang,
@@ -34,6 +35,6 @@ const Header: React.FC<Props> = ({
       </section>
     </header>
   );
-};
+});
 
 export default Header;

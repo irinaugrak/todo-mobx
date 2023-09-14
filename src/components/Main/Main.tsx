@@ -1,10 +1,10 @@
 import React from "react";
-import { useTranslation } from 'react-i18next';
-import styles from "./main.module.scss";
-import { ITodo, IShow } from "../../additional/types";
-import TodoList from "../TodoList/TodoList";
 import { observer } from "mobx-react-lite";
+import { useTranslation } from 'react-i18next';
+import TodoList from "../TodoList/TodoList";
 import Bar from "../Bar/bar";
+import { ITodo, IShow } from "../../additional/types";
+import styles from "./main.module.scss";
 
 interface Props {
   todos: Array<ITodo>;

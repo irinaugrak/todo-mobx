@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
-import { ILang, IShow } from "../../additional/types";
 import { observer } from "mobx-react-lite";
+import { ILang, IShow } from "../../additional/types";
 import styles from "./select.module.scss";
-
 
 interface Props {
   className?: string;

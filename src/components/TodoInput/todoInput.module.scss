@@ -1,8 +1,8 @@
 @import '../../styles/variables';
 
 .todoInput {
-  width: 100%;
   display: flex;
+  width: 100%;
   
   &Value {
     flex: 1;
@@ -23,9 +23,9 @@
   }
 
   &Btn {
+    padding: 10px;
     color: $white;
     border: none;
-    padding: 10px;
     border-radius: 5px;
     background-color: $beige;
     border: 2px solid $beige;
@@ -36,7 +36,6 @@
       opacity: 0.9;
       background-color: #B19986;
       border: 2px solid #B19986;
-      
     }
   }
 }

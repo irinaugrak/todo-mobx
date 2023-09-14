@@ -1,8 +1,8 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
 import Select from "../Select/Select";
-import styles from "./menu.module.scss";
 import { ILang } from "../../additional/types";
+import styles from "./menu.module.scss";
 
 interface Props {
   className: string;

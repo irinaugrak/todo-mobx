@@ -1,9 +1,9 @@
 @import '../../styles/variables';
 
 .header {
-  background-color: $blue;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  background-color: $blue;
 
   &Top {
     display: flex;
@@ -15,10 +15,10 @@
   }
 
   &Title {
-    font-size: 40px;
-    font-weight: 700;
+    margin-bottom: 10px;
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 700;
   }
 }
 

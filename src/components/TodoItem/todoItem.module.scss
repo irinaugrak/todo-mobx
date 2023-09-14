@@ -3,8 +3,8 @@
 .todoItem {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
   position: relative;
+  margin-bottom: 15px;
   padding: 10px;
 
   &Checkbox {
@@ -20,13 +20,13 @@
 
     &::before {
       content: '';
-      background: none;
       position: absolute;
-      left: 15px;
-      top: 50%;
-      transform: translateY(-50%);
       width: 24px;
       height: 24px;
+      left: 15px;
+      top: 50%;
+      background: none;
+      transform: translateY(-50%);
       border: 2px solid $beige;
       cursor: pointer;
       border-radius: 5px;
@@ -46,11 +46,11 @@
 
   &TitleEdit {
     width: calc(100% - 24px);
+    padding: 10px;
+    margin-left: 30px;
     color: $dark-grey;
     border: none;
     border-radius: 5px;
-    padding: 10px;
-    margin-left: 30px;
     background-color: $grey;
   }
 
@@ -63,12 +63,10 @@
     left: 0;
   }
 
-  
-
   &Content {
     display: flex;
-    align-items: center;
     flex: auto;
+    align-items: center;
     overflow: hidden;
   }
 
@@ -111,10 +109,6 @@
       opacity: 0.3;
     }
   }
-}
-
-@media screen and (max-width: 768px) {
-
 }
 
 @media screen and (max-width: 420px) {
