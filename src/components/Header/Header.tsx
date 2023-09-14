@@ -1,3 +1,5 @@
+// Хедер приложения содержит в себе меню с возможностью переключения языка, заголовок и форму ввода задачи
+
 import React from "react";
 import { observer } from "mobx-react-lite";
 import { useTranslation } from 'react-i18next';

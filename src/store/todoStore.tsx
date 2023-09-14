@@ -2,6 +2,7 @@ import { makeAutoObservable } from "mobx";
 import { ITodo } from "../additional/types";
 import { generateId } from "../additional/api";
 
+// Введенные задачи сохраняются в localStorage. При отсутствии данных в localStorage список будет инициирован тремя задачами
 const getCurrentTodos = () => {
   try {
     const initial = JSON.stringify([{"id":"0ac895f128481lmjcwh66","title":"One more task","completed":false},{"id":"8e13bdc1640f7lmjcvtyd","title":"My other task","completed":false},{"id":"7c4f7530d2d62lmjcvoux","title":"My first task","completed":true}]);

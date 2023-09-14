@@ -1,3 +1,5 @@
+// Компонент для ввода новой задачи. Новую задачу можно добавить, нажав на одноименную кнопку справа от поля ввода задачи, либо нажать на клавишу Enter
+
 import React, { useCallback, useState } from "react";
 import { observer } from "mobx-react-lite";
 import { useTranslation } from 'react-i18next';
@@ -14,7 +16,7 @@ const TodoInput: React.FC<Props> = observer(({ createTodo }) => {
   const addTodo = useCallback(() => {
     createTodo(inputValue);
     setInputValue("");
-  }, [inputValue]);
+  }, [inputValue, createTodo]);
 
   return (
     <div className={styles.todoInput}>

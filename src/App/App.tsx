@@ -1,3 +1,5 @@
+// Основной компонент. Получаем все данные с хранилища, затем с помощью пропсов прокидываем во вложенные компоненты. При доработке приложения с увеличением его функционала сюда легко можно будет добавить футер, в котором, к примеру, можно будет вести подсчет выполненных задач или реализовать кнопку выполнения всех задач одним действием
+
 import React from "react";
 import { observer } from "mobx-react-lite";
 import "../i18n/config";
@@ -21,9 +23,8 @@ export const App: React.FC = observer(() => {
     lang,
     saveLang,
   } = todoStore;
-  
+
   const changeLanguage = (lang: string) => {
-    console.log('change', lang);
     i18n.changeLanguage(lang);
   };
 

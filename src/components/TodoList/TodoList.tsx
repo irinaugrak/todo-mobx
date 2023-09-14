@@ -1,3 +1,5 @@
+// Компонент со списком всех введенных задач
+
 import React from "react";
 import { observer } from "mobx-react-lite";
 import TodoItem from "../TodoItem/TodoItem";

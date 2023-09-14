@@ -1,3 +1,5 @@
+// Основная часть приложения. Содержит в себе панель управления и список задач
+
 import React from "react";
 import { observer } from "mobx-react-lite";
 import { useTranslation } from 'react-i18next';
