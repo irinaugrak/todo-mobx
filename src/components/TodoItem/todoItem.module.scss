@@ -1,0 +1,113 @@
+@import '../../styles/variables';
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  position: relative;
+  padding: 10px;
+
+  &Checkbox {
+    opacity: 0;
+  }
+
+  &Checkbox:checked + &Label::before {
+    background: no-repeat center/90%  url("../../assets/images/check.svg");
+  }
+
+  &Label {
+    width: 100%;
+
+    &::before {
+      content: '';
+      background: none;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      border: 2px solid $beige;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
+
+  &Title {
+    display: block;
+    padding: 10px;
+    margin-left: 10px;
+    color: $dark-grey;
+  }
+
+  &TitleCompleted {
+    text-decoration: line-through;
+  }
+
+  &TitleEdit {
+    color: $dark-grey;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: $grey;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid $medium-grey;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  
+
+  &Content {
+    display: flex;
+    align-items: center;
+    flex: auto;
+  }
+
+  &Actions {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  &Edit {
+    width: 24px;
+    height: 24px;
+    background: no-repeat center/80% url("../../assets/images/edit.svg");
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+
+  &Save {
+    width: 24px;
+    height: 24px;
+    background: no-repeat center/70% url("../../assets/images/save.svg");
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+
+  &Remove {
+    width: 24px;
+    height: 24px;
+    background: no-repeat center/80% url("../../assets/images/remove.svg");
+    transition: opacity 0.3s;
+    margin-left: 5px;
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}

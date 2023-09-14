@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+
+.select {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15px;
+
+  &Open {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background: no-repeat center center /80% url("../../assets/images/down.svg");
+      width: 16px;
+      height: 16px;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+      margin-left: 10px;
+    }
+  }
+
+  &Selected {
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &List {
+    position: absolute;
+    z-index: 1;
+    background-color: $white;
+    border: 1px solid $medium-grey;
+    top: 35px;
+    left: 25px;
+    padding: 5px 0;
+    display: none;
+    border-radius: 5px;
+
+    &.Active {
+      display: block;
+    }
+  }
+
+  &Item {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 13px;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: $pink;
+    }
+  }
+}
+

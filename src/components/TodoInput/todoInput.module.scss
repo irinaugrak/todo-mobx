@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.todoInput {
+  width: 100%;
+  display: grid;
+  grid-template-columns:  5fr 1fr;
+
+  &Value {
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: $dark-grey;
+
+    &::placeholder {
+      color: $medium-grey;
+    }
+
+    &:focus {
+      border: 1px solid $dark-grey;
+    }
+  }
+
+  &Btn {
+    color: $white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $beige;
+    border: 2px solid $beige;
+    font-size: 20px;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.9;
+      background-color: #B19986;
+      border: 2px solid #B19986;
+      
+    }
+  }
+}

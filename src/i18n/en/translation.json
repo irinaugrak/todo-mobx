@@ -1,0 +1,8 @@
+{
+  "add": "Add",
+  "newTask": "Add a new task...",
+  "showAll": "Show all",
+  "onlyDone": "Only Done",
+  "onlyNotDone": "Only Not Done",
+  "noTask": "There is no task..."
+}

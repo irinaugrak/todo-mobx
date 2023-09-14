@@ -1,0 +1,13 @@
+@import '../styles/variables';
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: $black;
+  min-height: 100vh;
+  background-color: $grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

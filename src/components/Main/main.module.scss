@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.main {
+  
+
+  & .content {
+    padding: 0 50px 20px;
+  }
+}
