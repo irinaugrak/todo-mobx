@@ -2,10 +2,10 @@
 
 .todoInput {
   width: 100%;
-  display: grid;
-  grid-template-columns:  5fr 1fr;
-
+  display: flex;
+  
   &Value {
+    flex: 1;
     font-size: 16px;
     margin-right: 10px;
     padding: 10px;
@@ -40,3 +40,21 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .todoInput {
+    flex-direction: column;
+    &Value {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    &Btn {
+      flex: 1;
+    }
+  }
+}
+
+
+
+

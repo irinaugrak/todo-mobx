@@ -24,7 +24,7 @@ const Main: React.FC<Props> = observer(
     return (
       <main className={styles.main}>
         <Bar show={show} shows={shows} saveShow={saveShow} />
-        <section className={styles.content}>
+        <section className={styles.mainContent}>
           {!todos.filter((todo: ITodo) => {
             if (show === "onlyDone") {
               return todo.completed;

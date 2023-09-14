@@ -1,9 +1,23 @@
 @import '../../styles/variables';
 
 .main {
-  
-
-  & .content {
+  &Content {
     padding: 0 50px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    &Content {
+      padding: 0 20px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main {
+    &Content {
+      padding: 0 10px 20px;
+    }
   }
 }
