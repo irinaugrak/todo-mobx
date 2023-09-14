@@ -23,19 +23,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .todoInput {
-    &Value {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-
-    &Btn {
-      flex: 1;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
   .header {
     &Bottom {
       padding: 0 20px 20px;
@@ -45,6 +32,10 @@
 
 @media screen and (max-width: 420px) {
   .header {
+    &Title {
+      font-size: 35px;
+    }
+
     &Bottom {
       padding: 0 10px 20px;
     }
