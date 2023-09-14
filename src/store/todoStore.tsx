@@ -37,7 +37,7 @@ class todoStore {
 
   updateTodo = (id: string, title: string) => {
     this.todos.forEach((item) => {
-      if (item.id === id) {
+      if (item.id === id && title.trim() != "") {
         item.title = title;
       }
     });
